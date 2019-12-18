@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+
+select, input {
+  margin: 10px auto;
+}
+
+input {
+  display: block;
+}
+
+#container {
+  margin: auto;
+  background-color: #4f4f4f;
+  width: 500px;
+  height: 500px;
+  color: #FFFFFF;
+}
+
+#drawing-box {
+  width: 500px;
+  height: 500px;
+}
