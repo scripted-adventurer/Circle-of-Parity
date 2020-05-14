@@ -7,7 +7,7 @@ class Graph {
     this.start = '';
     this.addTeams();
     this.addWinsLists();
-    //this.sortWinsLists();
+    this.sortWinsLists();
   }
   addTeams() {
     Object.keys(this.results).forEach(team => this.graph[team] = new TeamNode(team));
@@ -58,8 +58,6 @@ class Graph {
       let response = activeNode.findChild(this.graphLen);
       this.graphLen += response.length;
       activeNode = response.next;
-      if (this.graphLen == 32) {
-      }
     }
   }
   getPath() {
